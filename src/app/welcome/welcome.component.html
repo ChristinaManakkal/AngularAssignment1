@@ -1,0 +1,57 @@
+<head>
+    <link rel="stylesheet" href="welcome.component.css">
+</head>
+<nav class=" navbar navbar-dark bg-success justify-content-between dark-bg">
+    <div class="d-flex align-items-center">
+      <h2 class="text-white">Welcome {{ employeeObj.first_name }}</h2>
+    </div>
+    <input type="button" class="btn btn-danger" value="Log Out" (click)="logout()" />
+  </nav>
+  
+
+  
+  
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="card">
+          <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Employee Details</h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <tbody>
+                  <tr>
+                    <td class="table-header">Employee First Name</td>
+                    <td>{{ employeeObj.first_name }}</td>
+                  </tr>
+                  <tr>
+                    <td class="table-header">Employee Last Name</td>
+                    <td>{{ employeeObj.last_name }}</td>
+                  </tr>
+                  <tr>
+                    <td class="table-header">Employee Contact Number</td>
+                    <td>{{ employeeObj.contact }}</td>
+                  </tr>
+                  <tr>
+                    <td class="table-header">Employee Date of Birth</td>
+                    <td>{{ employeeObj.dob }}</td>
+                  </tr>
+                  <tr>
+                    <td class="table-header">Employee Email</td>
+                    <td>{{ employeeObj.email }}</td>
+                  </tr>
+                  <tr>
+                    <td class="table-header">Employee Address</td>
+                    <td>{{ employeeObj.address }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
